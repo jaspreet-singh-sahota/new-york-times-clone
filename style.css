@@ -49,7 +49,6 @@ q:before, q:after {
     margin: 0;
 }
 
-/* nav bar------------------------------------------------- */
 .ad {
     padding-top: 6px;
     width: 100vw;
@@ -59,7 +58,22 @@ q:before, q:after {
     font-size: 10px;
     color: #888;
     box-sizing: border-box;
+    margin: 3rem 0;
 }
+
+figcaption {
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    padding-top: 5px;
+}
+
+span.ref {
+    font-size: 12px;
+    color: #888;
+}
+
+/* nav bar------------------------------------------------- */
 
 nav {
 	-webkit-box-align: center;
@@ -120,16 +134,8 @@ header h1 span {
     text-align: left;
 }
 
-header figcaption {
-    font-size: 14px;
-    color: #666;
-    text-align: left;
-    padding-top: 5px;
-}
-
-header figcaption .ref {
-    font-size: 12px;
-    color: #888;
+.article-img {
+    margin-top: 2em;
 }
 
 .article-img img {
@@ -143,13 +149,13 @@ section {
     width: 100%;
     margin-left: 300px;
     text-align: left;
-    padding-bottom: 2em;
 }
 
-section .top-bar{
+section div[class$="bar"] {
     display: flex;
     justify-content: space-between;
     height: 50px;
+    margin-top: 1em;
 }
 
 section .author {
@@ -163,22 +169,22 @@ section .top-bar .date {
     font-size: 12px;
 }
 
-section .top-bar ul {
+section div[class$="bar"] ul {
     list-style: none;
     display: inline-block;
 }
 
-section .top-bar li {
+section div[class$="bar"] li {
     display: inline-block;
     padding: 0 5px;
 }
 
-section .top-bar li:not(.btn) {
+section div[class$="bar"] li:not(.btn) {
     position: relative;
     bottom: 5px;
 }
 
-section .top-bar li a {
+section div[class$="bar"] li a {
     display: flex;
     height: 28px;
     width: 28px;
@@ -186,17 +192,53 @@ section .top-bar li a {
     align-items: center;
 }
 
-section .top-bar li:not(.btn) a {
+section div[class$="bar"] li:not(.btn) a {
     border-radius: 50%;
     background-color: #eee;
 }
 
-section .top-bar li.btn a {
+section div[class$="bar"] li.btn a {
     font-size: 32px;
 }
 
-section .top-bar li:nth-last-child(1) a::after {
+section div[class$="bar"] li:nth-last-child(1) a::after {
     content: "615";
     position: absolute;
     font-size: 10px;
+}
+
+section .bot-bar button {
+    height: 36px;
+    background-color: #567b95;
+    border: 1px solid #326891;
+    border-radius: 4px;
+    color: #fff;
+    line-height: 11px;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 1em 4em;
+}
+
+section #inner {
+    height: 0;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 2em;
+}
+
+#inner iframe, #inner object, #inner embed {
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border: 0;
+}
+
+span.art-foot {
+    font-size: 10px;
+    color: #666;
 }

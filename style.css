@@ -49,7 +49,7 @@ q:before, q:after {
     margin: 0;
 }
 
-/* nav bar------------------------------------------------- */
+    /* nav bar------------------------------------------------- */
 
 nav {
 	-webkit-box-align: center;
@@ -64,6 +64,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
 }
 
 .top-stripe-left > * {
@@ -89,4 +90,61 @@ nav button {
     font-size: 12px;
     height: 33px;
     padding: 10px;
+}
+ 
+/* The Theory of Inflation (section)------------------------------------------------- */
+
+.inflation-infographic {
+    padding-top: 20%;
+    padding: 3% 12.5%;
+    font-family: nyt-franklin,arial,helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 300;
+    color: #000000;
+}
+
+img[alt="The Universe"] {
+    width: 100%;
+}
+
+.infographic-container {
+    position: absolute;
+    top: 150px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    "info1 info2 info3 info4"
+    "info5 info6 info7 info8";
+	-webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    grid-gap: 155px 30px;  
+}
+
+#infographic-container {
+    position: relative;
+}
+
+strong {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: .05em;
+}
+
+.description {
+    font-size: .875rem;
+    line-height: 18px;
+    line-height: 1.125rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: nyt-cheltenham-sh,georgia,times new roman,times,serif;
+    color: #666;
+}
+
+.inflation-infographic h6 {
+    font-size: 1.25rem;
+    line-height: 24px;
+    line-height: 1.5rem;
+    font-weight: 700;
 }

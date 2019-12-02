@@ -3,10 +3,9 @@ linters:
     flake8:
     eslint:
         config: './eslint.config'
-        fixer: true
     csslint:
     stylelint:
-        config: 'stylelintrc.json'
+        config: 'stylelint.config.js'
         fixer: true
 
 files:

@@ -16,11 +16,11 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	margin: 0;
+	padding: 0;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -45,262 +45,260 @@ q:before, q:after {
 
 /* our CSS starts from here body ------------------------------------------------------------ */
 body {
-    padding: 0;
-    margin: 0;
+    color: #333;
     font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
     font-size: 22px;
     line-height: 27px;
-    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 .ad {
-    padding-top: 6px;
-    width: 100%;
-    height: 300px;
     background-color: #eee;
-    text-align: center;
-    font-size: 10px;
-    color: #888;
     box-sizing: border-box;
+    color: #888;
+    font-size: 10px;
+    height: 300px;
     margin: 3rem 0;
+    padding-top: 6px;
+    text-align: center;
+    width: 100%;
 }
 
 figcaption {
-    font-size: 14px;
     color: #666;
-    text-align: center;
-    padding-top: 2px;
+    font-size: 14px;
     padding-bottom: 20px;
+    padding-top: 2px;
+    text-align: center;
 }
 
 span.ref {
-    font-size: 12px;
     color: #888;
+    font-size: 12px;
 }
 
 /* nav bar------------------------------------------------- */
 
 nav {
 	-webkit-box-align: center;
+	-webkit-box-pack: justify;
 	align-items: center;
 	background-color: white;
-    border: 1px solid #c5c5c5;
 	display: -webkit-box;
 	display: flex;
-    height: 50px;
-	-webkit-box-pack: justify;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
+  border: 1px solid #c5c5c5;
+  height: 50px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .the-newyork-times{
-    height: 50px;
-    width: 200px;
+  height: 50px;
+  width: 200px;
 }
 
 .top-stripe-left > * {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 nav span {
-    font-size: 15px;
-    font-weight: bold;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .top-stripe-right > * {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 nav button {
-    background-color: #567b95;
-    border: 1px solid #326891;
-    border-radius: 4px;
-    color: #fff;
-    line-height: 11px;
-    font-weight: 700;
-    font-size: 12px;
-    height: 33px;
-    padding: 10px;
+  background-color: #567b95;
+  border-radius: 4px;
+  border: 1px solid #326891;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  height: 33px;
+  line-height: 11px;
+  padding: 10px;
 }
  
 /* The Theory of Inflation (section)------------------------------------------------- */
 
 .inflation-infographic {
-    padding-top: 20%;
-    padding: 3% 12.5%;
-    font-family: nyt-franklin,arial,helvetica,sans-serif;
-    font-size: 13px;
-    line-height: 17px;
-    font-weight: 300;
-    color: #000000;
+  color: #000000;
+  font-family: nyt-franklin,arial,helvetica,sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 17px;
+  padding-top: 20%;
+  padding: 3% 12.5%;
 }
 
 img[alt="The Universe"] {
-    width: 100%;
+  width: 100%;
 }
 
 .infographic-container {
-    position: absolute;
-    top: 150px;
-    display: grid;
-    grid-template-areas:
-    "info1 info2 info3 info4"
-    "info5 info6 info7 info8";
-	-webkit-box-pack: justify;
-    justify-content: space-between;
-    width: 100%;
-    grid-gap: 155px 30px;  
+  -webkit-box-pack: justify;
+  display: grid;
+  grid-gap: 155px 30px;  
+  grid-template-areas:"info1 info2 info3 info4" "info5 info6 info7 info8";
+  justify-content: space-between;
+  position: absolute;
+  top: 150px;
+  width: 100%;
 }
 
 #infographic-container {
-    position: relative;
+  position: relative;
 }
 
 strong {
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: .05em;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .05em;
 }
 
 .description {
-    font-size: .875rem;
-    line-height: 18px;
-    line-height: 1.125rem;
-    font-weight: 400;
-    font-style: normal;
-    font-family: nyt-cheltenham-sh,georgia,times new roman,times,serif;
-    color: #666;
+  color: #666;
+  font-family: nyt-cheltenham-sh,georgia,times new roman,times,serif;
+  font-size: .875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+  line-height: 18px;
 }
 
 .inflation-infographic h6 {
-    font-size: 1.25rem;
-    line-height: 24px;
-    line-height: 1.5rem;
-    font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  line-height: 24px;
 }
 
 /* Header ------------------------------------------------------------*/
 
 main {
-    width: 100%;
-    text-align: center;
+  text-align: center;
+  width: 100%;
 }
 
 header h1 {
-    font-style: italic;
+  font-style: italic;
 }
 
 header h1 span {
-    font-size: 28px;
-    display: inline-block;
-    width: 400px;
-    text-align: left;
+  display: inline-block;
+  font-size: 28px;
+  text-align: left;
+  width: 400px;
 }
 
 .article-img {
-    margin-top: 2em;
-    margin: 5% 13%;
+  margin-top: 2em;
+  margin: 5% 13%;
 }
 
 .article-img img {
-    width: 100%;
+  width: 100%;
 }
 
 /* Main Section ---------------------------------------------------------*/
 
 main section {
-    max-width: 600px;
-    width: 50%;
-    margin: auto;
-    text-align: left;
+  margin: auto;
+  max-width: 600px;
+  text-align: left;
+  width: 50%;
 }
 
 section div[class$="bar"] {
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    margin-top: 1em;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  margin-top: 1em;
 }
 
 section .author {
-    font-weight: bold;
-    font-size: 14px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 section .top-bar .date {
-    bottom: 16px;
-    box-sizing: border-box;
-    font-size: 12px;
-    padding-bottom: 12px;
-    padding-top: 18px;
-    position: relative;
+  bottom: 16px;
+  box-sizing: border-box;
+  font-size: 12px;
+  padding-bottom: 12px;
+  padding-top: 18px;
+  position: relative;
 }
 
 section div[class$="bar"] ul {
-    list-style: none;
-    display: inline-block;
+  display: inline-block;
+  list-style: none;
 }
 
 iframe {
-    height: 330px;
-    width: 90%;
-    margin-left: 5%;
-    padding: 30px 0 0 0;
+  height: 330px;
+  margin-left: 5%;
+  padding: 30px 0 0 0;
+  width: 90%;
 }
 
 img[alt="The Bicep2 Telescope"] {
-    width: 720px;
-    margin-left: -25%;
+  margin-left: -25%;
+  width: 720px;
 }
 
 section div[class$="bar"] li {
-    display: inline-block;
-    padding: 0 5px;
+  display: inline-block;
+  padding: 0 5px;
 }
 
 section div[class$="bar"] li:not(.btn) {
-    position: relative;
-    bottom: 5px;
+  bottom: 5px;
+  position: relative;
 }
 
 section div[class$="bar"] li a {
-    align-items: center;
-    display: flex;
-    height: 28px;
-    justify-content: space-around;
-    width: 28px;
-    text-decoration: none;
-    color: #000000;
+  align-items: center;
+  color: #000000;
+  display: flex;
+  height: 28px;
+  justify-content: space-around;
+  text-decoration: none;
+  width: 28px;
 }
 
 section div[class$="bar"] li a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 section div[class$="bar"] li:not(.btn) a {
-    background-color: #fff;
-    border-radius: 50%;
-    font-size: 20px;
-    padding: 4px;
-    box-shadow: 0 0 0 18px #eee inset;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 18px #eee inset;
+  font-size: 20px;
+  padding: 4px;
 }
 
 section div[class$="bar"] li:not(.btn) a:hover {
-    box-shadow: 0 0 0 1px #eee inset;
+  box-shadow: 0 0 0 1px #eee inset;
 }
 
 
 section div[class$="bar"] li.btn a {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 section div[class$="bar"] li:nth-last-child(1) a::after {
-    content: "615";
-    position: absolute;
-    font-size: 10px;
+  content: "615";
+  font-size: 10px;
+  position: absolute;
 }
 
 
@@ -310,20 +308,17 @@ section div[class$="bar"] li:nth-last-child(1) a::after {
 	display: grid;
 	grid-column: 1 / -1;
 	grid-gap: 5px;
-	grid-template-areas:
-		"more-in-space most-popular"
-		"more-in-space most-popular"
-		"editors-picks most-popular";
+	grid-template-areas: "more-in-space most-popular" "more-in-space most-popular" "editors-picks most-popular";
 	grid-template-columns: 3fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .more-in-space-container,
 .most-popular-container,
 .editors-picks-container {
 	border-top: 1px solid black;
-    padding-top: 20px;
-    margin-left: 35px;
+  margin-left: 35px;
+  padding-top: 20px;
 }
 
 .more-in-space-container {
@@ -331,22 +326,21 @@ section div[class$="bar"] li:nth-last-child(1) a::after {
 }
 
 .more-container {
+	-webkit-box-pack: justify;
 	display: grid;
 	grid-template: repeat(2, 1fr) / repeat(3, 1fr);
-	-webkit-box-pack: justify;
-    justify-content: space-between;
-    grid-gap: 0 20px; 
-  
+  grid-gap: 0 20px; 
+  justify-content: space-between;
 }
 
 .most-popular-container {
+	-webkit-box-direction: normal;
+	-webkit-box-orient: vertical;
 	display: -webkit-box;
 	float: left;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
 	grid-area: most-popular;
-    margin: 0 10px 0 20px;
-    width: 260px;
+  margin: 0 10px 0 20px;
+  width: 260px;
 }
 
 section h4 {
@@ -355,9 +349,9 @@ section h4 {
 }
 
 .most-popular-container p {
+	border-top: 1px solid lightgrey;
 	font-size: 17px;
 	padding: 15px 0;
-	border-top: 1px solid lightgrey;
 }
 
 .most-popular-container a:hover {
@@ -370,9 +364,9 @@ section h4 {
 }
 
 .editor-container {
+	-webkit-box-pack: justify;
 	display: grid;
 	grid-template: 1fr / repeat(3, 1fr);
-	-webkit-box-pack: justify;
 	justify-content: space-between;
 }
 
@@ -435,13 +429,13 @@ section h4 {
 }
 
 .lists-container {
+	-webkit-box-pack: justify;
 	border-bottom: 1px solid lightgrey;
 	display: -webkit-box;
 	display: flex;
-	-webkit-box-pack: justify;
-	        justify-content: space-between;
 	margin: 0 35px;
 	padding-bottom: 10px;
+  justify-content: space-between;
 }
 
 .lists-container div:last-child {
@@ -450,11 +444,11 @@ section h4 {
 }
 
 .list-wrapper {
+	-webkit-box-direction: normal;
+	-webkit-box-orient: vertical;
 	display: -webkit-box;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	       flex-direction: column;
+  flex-direction: column;
 }
 
 .list-wrapper li {
@@ -500,10 +494,10 @@ li img {
 /* LAST FOOTNOTES------------------------------------------------------- */
 
 .last-footnotes {
+	-webkit-box-pack: center;
 	display: -webkit-box;
 	display: flex;
-	-webkit-box-pack: center;
-	 justify-content: center;
+  justify-content: center;
 }
 
 .last-footnotes ul {
@@ -512,9 +506,9 @@ li img {
 	display: flex;
 	font-size: 10px;
 	justify-content: space-around;
-    margin: 0 10%  40px 11%;
-    width: 100%;
 	padding-top: 15px;
+  margin: 0 10%  40px 11%;
+  width: 100%;
 }
 
 .last-footnotes li:hover {

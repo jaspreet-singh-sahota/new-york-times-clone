@@ -44,22 +44,41 @@ q:before, q:after {
 }
 
 /* our CSS starts from here body ------------------------------------------------------------ */
-* {
+body {
     padding: 0;
     margin: 0;
+    font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+    font-size: 22px;
+    line-height: 27px;
+    color: #333;
 }
 
-/* nav bar------------------------------------------------- */
 .ad {
     padding-top: 6px;
-    width: 100vw;
+    width: 100%;
     height: 300px;
     background-color: #eee;
     text-align: center;
     font-size: 10px;
     color: #888;
     box-sizing: border-box;
+    margin: 3rem 0;
 }
+
+figcaption {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+
+span.ref {
+    font-size: 12px;
+    color: #888;
+}
+
+/* nav bar------------------------------------------------- */
 
 nav {
 	-webkit-box-align: center;
@@ -75,6 +94,11 @@ nav {
     top: 0;
     width: 100%;
     z-index: 10;
+}
+
+.the-newyork-times{
+    height: 50px;
+    width: 200px;
 }
 
 .top-stripe-left > * {
@@ -122,7 +146,6 @@ img[alt="The Universe"] {
     position: absolute;
     top: 150px;
     display: grid;
-    grid-gap: 10px;
     grid-template-areas:
     "info1 info2 info3 info4"
     "info5 info6 info7 info8";
@@ -162,7 +185,6 @@ strong {
 /* Header ------------------------------------------------------------*/
 
 main {
-    max-width: 1200px;
     width: 100%;
     text-align: center;
 }
@@ -178,16 +200,9 @@ header h1 span {
     text-align: left;
 }
 
-header figcaption {
-    font-size: 14px;
-    color: #666;
-    text-align: left;
-    padding-top: 5px;
-}
-
-header figcaption .ref {
-    font-size: 12px;
-    color: #888;
+.article-img {
+    margin-top: 2em;
+    margin: 5% 13%;
 }
 
 .article-img img {
@@ -196,18 +211,17 @@ header figcaption .ref {
 
 /* Main Section ---------------------------------------------------------*/
 
-section {
-    max-width: 600px;
-    width: 100%;
-    margin-left: 300px;
+main section {
+    width: 50%;
+    margin: auto;
     text-align: left;
-    padding-bottom: 2em;
 }
 
-section .top-bar{
+section div[class$="bar"] {
     display: flex;
     justify-content: space-between;
     height: 50px;
+    margin-top: 1em;
 }
 
 section .author {
@@ -221,22 +235,34 @@ section .top-bar .date {
     font-size: 12px;
 }
 
-section .top-bar ul {
+section div[class$="bar"] ul {
     list-style: none;
     display: inline-block;
 }
 
-section .top-bar li {
+iframe {
+    height: 330px;
+    width: 90%;
+    margin-left: 5%;
+    padding: 30px 0 0 0;
+}
+
+img[alt="The Bicep2 Telescope"] {
+    width: 720px;
+    margin-left: -25%;
+}
+
+section div[class$="bar"] li {
     display: inline-block;
     padding: 0 5px;
 }
 
-section .top-bar li:not(.btn) {
+section div[class$="bar"] li:not(.btn) {
     position: relative;
     bottom: 5px;
 }
 
-section .top-bar li a {
+section div[class$="bar"] li a {
     display: flex;
     height: 28px;
     width: 28px;
@@ -244,16 +270,16 @@ section .top-bar li a {
     align-items: center;
 }
 
-section .top-bar li:not(.btn) a {
+section div[class$="bar"] li:not(.btn) a {
     border-radius: 50%;
     background-color: #eee;
 }
 
-section .top-bar li.btn a {
+section div[class$="bar"] li.btn a {
     font-size: 32px;
 }
 
-section .top-bar li:nth-last-child(1) a::after {
+section div[class$="bar"] li:nth-last-child(1) a::after {
     content: "615";
     position: absolute;
     font-size: 10px;
@@ -262,48 +288,50 @@ section .top-bar li:nth-last-child(1) a::after {
 
 /* after the artice----------------------------------------------------------- */
 
-
 #grid-boxes {
 	display: grid;
 	grid-column: 1 / -1;
-	grid-gap: 20px;
+	grid-gap: 5px;
 	grid-template-areas:
 		"more-in-space most-popular"
 		"more-in-space most-popular"
 		"editors-picks most-popular";
 	grid-template-columns: 3fr 1fr;
-	grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .more-in-space-container,
 .most-popular-container,
 .editors-picks-container {
 	border-top: 1px solid black;
-	padding-top: 20px;
+    padding-top: 20px;
+    margin-left: 35px;
 }
 
 .more-in-space-container {
-	margin: 0 10px 0 35px;
+	grid-area: more-in-space;
 }
 
 .more-container {
 	display: grid;
 	grid-template: repeat(2, 1fr) / repeat(3, 1fr);
 	-webkit-box-pack: justify;
-	justify-content: space-between;
+    justify-content: space-between;
+    grid-gap: 0 20px; 
+  
 }
 
 .most-popular-container {
-	display: flex;
+	display: -webkit-box;
+	float: left;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	        flex-direction: column;
 	grid-area: most-popular;
-	margin-right: 35px;
-	max-width: 285px;
+    margin: 0 10px 0 20px;
+    width: 260px;
 }
 
-h4 {
+section h4 {
 	font-size: 16px;
 	padding-bottom: 15px;
 }
@@ -319,7 +347,8 @@ h4 {
 }
 
 .editors-picks-container {
-	margin: 0 10px 0 35px;
+	grid-area: editors-picks;
+
 }
 
 .editor-container {
@@ -334,7 +363,7 @@ h4 {
 .more-wrapper img,
 .editor-wrapper img {
 	height: auto;
-	width: 230px;
+	width: 300px;
 }
 
 .center {
@@ -366,4 +395,113 @@ h4 {
 	line-height: 1.5;
 }
 
+/* FOOTER----------------------------------------------------------- */
+
+.strip-over-lists::before {
+	border-bottom: 1px solid lightgrey;
+	border-top: 1px solid lightgrey;
+	content: "";
+	display: block;
+	height: 2px;
+	margin: 35px 10px 20px 10px;
+}
+
+.strip-over-lists {
+	margin: 10px 35px 0px 35px;
+}
+
+.strip-over-lists a {
+	color: #567b95;
+	float: right;
+	font-size: 12px;
+}
+
+.lists-container {
+	border-bottom: 1px solid lightgrey;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+	margin: 0 35px;
+	padding-bottom: 10px;
+}
+
+.lists-container div:last-child {
+	border-left: 1px solid lightgrey;
+	padding-left: 15px;
+}
+
+.list-wrapper {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	       flex-direction: column;
+}
+
+.list-wrapper li {
+	font-size: 12px;
+	line-height: 2;
+}
+
+.lists-container div:last-child li {
+	font-size: 10px;
+}
+
+#subscribe li.bold {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.list-wrapper ul :first-child {
+	font-weight: bold;
+}
+
+#subscribe li:nth-child(5) {
+	padding-bottom: 10px;
+}
+
+#subscribe li:nth-child(8) {
+	border-bottom: 1px solid lightgrey;
+	padding-bottom: 5px;
+}
+
+#subscribe li:nth-child(9) {
+	padding-top: 5px;
+}
+
+#subscribe li:nth-child(6 - 12) {
+	line-height: 2.3;
+}
+
+li img {
+  height: 14px;
+  width: 14px;
+}
+
+/* LAST FOOTNOTES------------------------------------------------------- */
+
+.last-footnotes {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: center;
+	 justify-content: center;
+}
+
+.last-footnotes ul {
+	color: #999;
+	display: -webkit-box;
+	display: flex;
+	font-size: 10px;
+	justify-content: space-around;
+    margin: 0 10%  40px 11%;
+    width: 100%;
+	padding-top: 15px;
+}
+
+.last-footnotes li:hover {
+	color: #999;
+	cursor: pointer;
+	text-decoration: underline;
+}
 

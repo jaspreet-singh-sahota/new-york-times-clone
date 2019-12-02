@@ -2,6 +2,8 @@
 
 > This assignment consists of making a clone of a New York Times article page.
 
+![Page Screenshot](screenshots/screenshot1.png)
+
 ## Details
 
 ### Main Content Section

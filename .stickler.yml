@@ -5,6 +5,9 @@ linters:
         config: './eslint.config'
         fixer: true
     csslint:
+    stylelint:
+        config: 'stylelintrc.json'
+        fixer: true
 
 files:
     ignore:

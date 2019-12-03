@@ -294,7 +294,11 @@ li img {
 
 /* Main Section --------------------------------------------------------- */
 main section h2 {
-  padding-top: 2em;
+  padding: 1.6em 0;
+}
+
+main section h3 {
+  padding: 1em 0;
 }
 
 main section {

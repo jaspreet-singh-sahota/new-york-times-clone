@@ -40,13 +40,14 @@ at the right side for the very last `<li>s`.
 - VSCode
 
 ## Live Demo
+You can check the live version here: https://jaspreet-singh-sahota.github.io/new-york-times-clone/
 
 ## Authors
 
 👤 **Jaspreet Singh**
 - Github: [@jaspreet-singh-sahota](https://github.com/jaspreet-singh-sahota)
-- Twitter: [@jaspree88033250]https://twitter.com/jaspree88033250
-- Linkedin: [jaspreet Singh]https://www.linkedin.com/in/jaspreet-singh-a28286146/
+- Twitter: [@jaspree88033250](https://twitter.com/jaspree88033250)
+- Linkedin: [jaspreet Singh](https://www.linkedin.com/in/jaspreet-singh-a28286146/)
 
 👤 **Diego Luna Granados**
 - Github: [@SlowKingV](https://github.com/SlowKingV)

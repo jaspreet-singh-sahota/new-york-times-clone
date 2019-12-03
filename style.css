@@ -86,8 +86,7 @@ ul,
 var,
 video {
   border: 0;
-  font-size: 100%;
-  font: inherit;
+  font: 100% inherit;
   margin: 0;
   padding: 0;
   vertical-align: baseline;
@@ -106,10 +105,6 @@ menu,
 nav,
 section {
   display: block;
-}
-
-body {
-  line-height: 1;
 }
 
 ol,
@@ -221,8 +216,7 @@ nav button {
   font-size: 13px;
   font-weight: 300;
   line-height: 17px;
-  padding-top: 20%;
-  padding: 3% 12.5%;
+  padding: 20% 12.5% 3% 12.5%;
 }
 
 img[alt="The Universe"] {
@@ -286,8 +280,12 @@ header h1 span {
 }
 
 .article-img {
-  margin-top: 2em;
   margin: 5% 13%;
+}
+
+li img {
+  height: 14px;
+  width: 14px;
 }
 
 .article-img img {
@@ -324,6 +322,17 @@ section .top-bar .date {
   position: relative;
 }
 
+.last-footnotes ul {
+  color: #999;
+  display: -webkit-box;
+  display: flex;
+  font-size: 10px;
+  justify-content: space-around;
+  padding-top: 15px;
+  margin: 0 10%  40px 11%;
+  width: 100%;
+}
+
 section div[class$="bar"] ul {
   display: inline-block;
   list-style: none;
@@ -341,14 +350,35 @@ img[alt="The Bicep2 Telescope"] {
   width: 720px;
 }
 
+.list-wrapper li {
+  font-size: 12px;
+  line-height: 2;
+}
+
 section div[class$="bar"] li {
   display: inline-block;
   padding: 0 5px;
 }
 
+.last-footnotes li:hover {
+  color: #999;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.lists-container div:last-child li {
+  font-size: 10px;
+}
+
 section div[class$="bar"] li:not(.btn) {
   bottom: 5px;
   position: relative;
+}
+
+.strip-over-lists a {
+  color: #567b95;
+  float: right;
+  font-size: 12px;
 }
 
 section div[class$="bar"] li a {
@@ -359,6 +389,10 @@ section div[class$="bar"] li a {
   justify-content: space-around;
   text-decoration: none;
   width: 28px;
+}
+
+.most-popular-container a:hover {
+  opacity: 0.6;
 }
 
 section div[class$="bar"] li a:hover {
@@ -373,13 +407,12 @@ section div[class$="bar"] li:not(.btn) a {
   padding: 4px;
 }
 
-section div[class$="bar"] li:not(.btn) a:hover {
-  box-shadow: 0 0 0 1px #eee inset;
-}
-
-
 section div[class$="bar"] li.btn a {
   font-size: 32px;
+}
+
+section div[class$="bar"] li:not(.btn) a:hover {
+  box-shadow: 0 0 0 1px #eee inset;
 }
 
 section div[class$="bar"] li:nth-last-child(1) a::after {
@@ -387,7 +420,6 @@ section div[class$="bar"] li:nth-last-child(1) a::after {
   font-size: 10px;
   position: absolute;
 }
-
 
 /* after the artice----------------------------------------------------------- */
 
@@ -439,10 +471,6 @@ section h4 {
   border-top: 1px solid lightgrey;
   font-size: 17px;
   padding: 15px 0;
-}
-
-.most-popular-container a:hover {
-  opacity: 0.6;
 }
 
 .editors-picks-container {
@@ -508,12 +536,6 @@ section h4 {
   margin: 10px 35px 0 35px;
 }
 
-.strip-over-lists a {
-  color: #567b95;
-  float: right;
-  font-size: 12px;
-}
-
 .lists-container {
   -webkit-box-pack: justify;
   border-bottom: 1px solid lightgrey;
@@ -535,15 +557,6 @@ section h4 {
   display: -webkit-box;
   display: flex;
   flex-direction: column;
-}
-
-.list-wrapper li {
-  font-size: 12px;
-  line-height: 2;
-}
-
-.lists-container div:last-child li {
-  font-size: 10px;
 }
 
 #subscribe li.bold {
@@ -572,11 +585,6 @@ section h4 {
   line-height: 2.3;
 }
 
-li img {
-  height: 14px;
-  width: 14px;
-}
-
 /* LAST FOOTNOTES------------------------------------------------------- */
 
 .last-footnotes {
@@ -585,21 +593,3 @@ li img {
   display: flex;
   justify-content: center;
 }
-
-.last-footnotes ul {
-  color: #999;
-  display: -webkit-box;
-  display: flex;
-  font-size: 10px;
-  justify-content: space-around;
-  padding-top: 15px;
-  margin: 0 10%  40px 11%;
-  width: 100%;
-}
-
-.last-footnotes li:hover {
-  color: #999;
-  cursor: pointer;
-  text-decoration: underline;
-}
-

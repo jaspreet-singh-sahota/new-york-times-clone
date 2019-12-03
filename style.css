@@ -293,6 +293,9 @@ li img {
 }
 
 /* Main Section --------------------------------------------------------- */
+main section h2 {
+  padding-top: 2em;
+}
 
 main section {
   margin: auto;

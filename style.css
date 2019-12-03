@@ -1,50 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* csslint box-sizing: false */
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  border: 0;
+  font: 100% inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
 
 /* our CSS starts from here body ------------------------------------------------------------ */
 body {
-  padding: 0;
-  margin: 0;
+  color: #333;
   font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
   font-size: 22px;
   line-height: 27px;
-  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 .ad {
-  padding-top: 6px;
-  width: 100%;
-  height: 300px;
   background-color: #eee;
-  text-align: center;
-  font-size: 10px;
-  color: #888;
   box-sizing: border-box;
+  color: #888;
+  font-size: 10px;
+  height: 300px;
   margin: 3rem 0;
+  padding-top: 6px;
+  text-align: center;
+  width: 100%;
 }
 
 figcaption {
-  font-size: 14px;
   color: #666;
-  text-align: center;
-  padding-top: 2px;
+  font-size: 14px;
   padding-bottom: 20px;
+  padding-top: 2px;
+  text-align: center;
 }
 
-span.ref {
-  font-size: 12px;
+.ref {
   color: #888;
+  font-size: 12px;
 }
 
 /* nav bar------------------------------------------------- */
 
 nav {
   -webkit-box-align: center;
+  -webkit-box-pack: justify;
   align-items: center;
   background-color: white;
-  border: 1px solid #c5c5c5;
   display: -webkit-box;
   display: flex;
+  border: 1px solid #c5c5c5;
   height: 50px;
-  -webkit-box-pack: justify;
   justify-content: space-between;
   position: fixed;
   top: 0;
@@ -72,25 +198,25 @@ nav span {
 
 nav button {
   background-color: #567b95;
-  border: 1px solid #326891;
   border-radius: 4px;
+  border: 1px solid #326891;
   color: #fff;
-  line-height: 11px;
-  font-weight: 700;
   font-size: 12px;
+  font-weight: 700;
   height: 33px;
+  line-height: 11px;
   padding: 10px;
 }
 
 /* The Theory of Inflation (section)------------------------------------------------- */
 
 .inflation-infographic {
-  padding: 20% 12.5% 3% 12.5%;
+  color: #000;
   font-family: nyt-franklin, arial, helvetica, sans-serif;
   font-size: 13px;
-  line-height: 17px;
   font-weight: 300;
-  color: #000;
+  line-height: 17px;
+  padding: 20% 12.5% 3% 12.5%;
 }
 
 img[alt="The Universe"] {
@@ -98,16 +224,14 @@ img[alt="The Universe"] {
 }
 
 .infographic-container {
+  -webkit-box-pack: justify;
+  display: grid;
+  grid-gap: 155px 30px;
+  grid-template-areas: "info1 info2 info3 info4" "info5 info6 info7 info8";
+  justify-content: space-between;
   position: absolute;
   top: 150px;
-  display: grid;
-  grid-template-areas:
-    "info1 info2 info3 info4"
-    "info5 info6 info7 info8";
-  -webkit-box-pack: justify;
-  justify-content: space-between;
   width: 100%;
-  grid-gap: 155px 30px;
 }
 
 #infographic-container {
@@ -121,27 +245,27 @@ strong {
 }
 
 .description {
-  font-size: 0.875rem;
-  line-height: 18px;
-  line-height: 1.125rem;
-  font-weight: 400;
-  font-style: normal;
-  font-family: nyt-cheltenham-sh, georgia, times new roman, times, serif;
   color: #666;
+  font-family: nyt-cheltenham-sh, georgia, times new roman, times, serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+  line-height: 18px;
 }
 
 .inflation-infographic h6 {
   font-size: 1.25rem;
-  line-height: 24px;
-  line-height: 1.5rem;
   font-weight: 700;
+  line-height: 1.5rem;
+  line-height: 24px;
 }
 
 /* Header ------------------------------------------------------------ */
 
 main {
-  width: 100%;
   text-align: center;
+  width: 100%;
 }
 
 header h1 {
@@ -149,14 +273,19 @@ header h1 {
 }
 
 header h1 span {
-  font-size: 28px;
   display: inline-block;
-  width: 400px;
+  font-size: 28px;
   text-align: left;
+  width: 400px;
 }
 
 .article-img {
   margin: 5% 13%;
+}
+
+li img {
+  height: 14px;
+  width: 14px;
 }
 
 .article-img img {
@@ -164,12 +293,68 @@ header h1 span {
 }
 
 /* Main Section --------------------------------------------------------- */
+main section h2 {
+  padding: 1.6em 0;
+}
+
+main section h3 {
+  padding: 1em 0;
+}
 
 main section {
-  max-width: 600px;
-  width: 50%;
   margin: auto;
+  max-width: 600px;
   text-align: left;
+  width: 50%;
+}
+
+section div[class$="bar"] {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+section .author {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+section .top-bar .date {
+  bottom: 16px;
+  box-sizing: border-box;
+  font-size: 12px;
+  padding-bottom: 12px;
+  padding-top: 18px;
+  position: relative;
+}
+
+.last-footnotes ul {
+  color: #999;
+  display: -webkit-box;
+  display: flex;
+  font-size: 10px;
+  justify-content: space-around;
+  padding-top: 15px;
+  margin: 0 10%  40px 11%;
+  width: 100%;
+}
+
+section div[class$="bar"] ul {
+  display: inline-block;
+  list-style: none;
+}
+
+iframe {
+  height: 330px;
+  margin-left: 5%;
+  padding: 30px 0 0 0;
+  width: 90%;
+}
+
+img[alt="The Bicep2 Telescope"] {
+  margin-left: -25%;
+  width: 720px;
 }
 
 .list-wrapper li {
@@ -182,68 +367,25 @@ section div[class$="bar"] li {
   padding: 0 5px;
 }
 
+.last-footnotes li:hover {
+  color: #999;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .lists-container div:last-child li {
   font-size: 10px;
+}
+
+section div[class$="bar"] li:not(.btn) {
+  bottom: 5px;
+  position: relative;
 }
 
 .strip-over-lists a {
   color: #567b95;
   float: right;
   font-size: 12px;
-}
-
-.last-footnotes ul {
-  color: #999;
-  display: -webkit-box;
-  display: flex;
-  font-size: 10px;
-  justify-content: space-around;
-  margin: 0 10%  40px 11%;
-  width: 100%;
-  padding-top: 15px;
-}
-
-section div[class$="bar"] {
-  display: flex;
-  justify-content: space-between;
-  height: 50px;
-  margin-top: 1em;
-}
-
-section .author {
-  font-weight: bold;
-  font-size: 14px;
-}
-
-section .top-bar .date {
-  bottom: 16px;
-  box-sizing: border-box;
-  font-size: 12px;
-  padding-bottom: 12px;
-  padding-top: 18px;
-  position: relative;
-}
-
-section div[class$="bar"] ul {
-  list-style: none;
-  display: inline-block;
-}
-
-iframe {
-  height: 330px;
-  width: 90%;
-  margin-left: 5%;
-  padding: 30px 0 0 0;
-}
-
-img[alt="The Bicep2 Telescope"] {
-  width: 720px;
-  margin-left: -25%;
-}
-
-section div[class$="bar"] li:not(.btn) {
-  position: relative;
-  bottom: 5px;
 }
 
 .lists-container a {
@@ -258,12 +400,16 @@ section div[class$="bar"] li:not(.btn) {
 
 section div[class$="bar"] li a {
   align-items: center;
+  color: #000;
   display: flex;
   height: 28px;
   justify-content: space-around;
-  width: 28px;
   text-decoration: none;
-  color: #000;
+  width: 28px;
+}
+
+.most-popular-container a:hover {
+  opacity: 0.6;
 }
 
 .lists-container a:hover {
@@ -277,9 +423,9 @@ section div[class$="bar"] li a:hover {
 section div[class$="bar"] li:not(.btn) a {
   background-color: #fff;
   border-radius: 50%;
+  box-shadow: 0 0 0 18px #eee inset;
   font-size: 20px;
   padding: 4px;
-  box-shadow: 0 0 0 18px #eee inset;
 }
 
 section div[class$="bar"] li.btn a {
@@ -292,8 +438,8 @@ section div[class$="bar"] li:not(.btn) a:hover {
 
 section div[class$="bar"] li:nth-last-child(1) a::after {
   content: "615";
-  position: absolute;
   font-size: 10px;
+  position: absolute;
 }
 
 /* after the artice----------------------------------------------------------- */
@@ -302,10 +448,7 @@ section div[class$="bar"] li:nth-last-child(1) a::after {
   display: grid;
   grid-column: 1 / -1;
   grid-gap: 5px;
-  grid-template-areas:
-    "more-in-space most-popular"
-    "more-in-space most-popular"
-    "editors-picks most-popular";
+  grid-template-areas: "more-in-space most-popular" "more-in-space most-popular" "editors-picks most-popular";
   grid-template-columns: 3fr 1fr;
   grid-template-rows: repeat(3, 1fr);
 }
@@ -314,8 +457,8 @@ section div[class$="bar"] li:nth-last-child(1) a::after {
 .most-popular-container,
 .editors-picks-container {
   border-top: 1px solid black;
-  padding-top: 20px;
   margin-left: 35px;
+  padding-top: 20px;
 }
 
 .more-in-space-container {
@@ -323,18 +466,18 @@ section div[class$="bar"] li:nth-last-child(1) a::after {
 }
 
 .more-container {
+  -webkit-box-pack: justify;
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
-  -webkit-box-pack: justify;
-  justify-content: space-between;
   grid-gap: 0 20px;
+  justify-content: space-between;
 }
 
 .most-popular-container {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
   display: -webkit-box;
   float: left;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   grid-area: most-popular;
   margin: 0 10px 0 20px;
   width: 260px;
@@ -346,9 +489,9 @@ section h4 {
 }
 
 .most-popular-container p {
+  border-top: 1px solid lightgrey;
   font-size: 17px;
   padding: 15px 0;
-  border-top: 1px solid lightgrey;
 }
 
 .editors-picks-container {
@@ -356,9 +499,9 @@ section h4 {
 }
 
 .editor-container {
+  -webkit-box-pack: justify;
   display: grid;
   grid-template: 1fr / repeat(3, 1fr);
-  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -415,13 +558,13 @@ section h4 {
 }
 
 .lists-container {
+  -webkit-box-pack: justify;
   border-bottom: 1px solid lightgrey;
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
   margin: 0 35px;
   padding-bottom: 10px;
+  justify-content: space-between;
 }
 
 .lists-container div:last-child {
@@ -430,10 +573,10 @@ section h4 {
 }
 
 .list-wrapper {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
   display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-direction: column;
 }
 
@@ -446,12 +589,6 @@ section h4 {
   font-weight: bold;
 }
 
-footer:last-child .last-footnotes li:hover {
-  color: #999;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
 #subscribe li:nth-child(5) {
   padding-bottom: 10px;
 }
@@ -459,13 +596,6 @@ footer:last-child .last-footnotes li:hover {
 #subscribe li:nth-child(8) {
   border-bottom: 1px solid lightgrey;
   padding-bottom: 5px;
-}
-
-.last-footnotes {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
 }
 
 #subscribe li:nth-child(9) {
@@ -476,7 +606,6 @@ footer:last-child .last-footnotes li:hover {
   line-height: 2.3;
 }
 
-<<<<<<< HEAD
 /* LAST FOOTNOTES------------------------------------------------------- */
 
 .last-footnotes {
@@ -524,9 +653,4 @@ footer:last-child .last-footnotes li:hover {
 
 .acc-more div:nth-child(3) {
   margin: 15px 0;
-=======
-li img[alt="ramdom"] {
-  height: 14px;
-  width: 14px;
->>>>>>> 430080f3085f1b8f39582c2a83567fcc6852266a
 }

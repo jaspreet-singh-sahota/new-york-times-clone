@@ -2,7 +2,7 @@
 
 > This assignment consists of making a clone of a New York Times article page.
 
-![Page Screenshot](screenshots/screenshot1.png)
+![Page Screenshot](assets/screenshot1.png)
 
 ## Details  
 

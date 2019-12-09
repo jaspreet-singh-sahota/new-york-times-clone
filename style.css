@@ -8,6 +8,12 @@ body a {
   text-decoration: none;
 }
 
+nav a {
+  font-size: 1.5em;
+}
+
+footer a { color: #08c; }
+
 body p a {
   color: #08c;
 }
@@ -107,10 +113,6 @@ nav ul li:hover {
   background: transparent url('https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/cta_your_verse_27pt.png') bottom no-repeat;
 }
 
-nav a {
-  font-size: 1.5em;
-}
-
 .thumbnails {
   width: 100%;
   display: flex;
@@ -125,8 +127,6 @@ footer {
   padding: 15px;
   margin: 0 -30px;
 }
-
-footer a { color: #08c; }
 
 .copyright {
   padding: 15px 80px;
